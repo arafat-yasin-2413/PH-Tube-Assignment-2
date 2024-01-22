@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PH Tube</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- style2.css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- Menu Bar -->
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+
+            <img src="./Images/logo.png" alt="">
+
+            <button onclick="sortByViews(currentCategory)" style="background-color: #EF4444;border:none;"
+                class="btn fs-5 text-white my-5">Sort by views</button>
+
+
+            <button class="btn" style="background-color: #EF4444;">
+                <a id="blog-anchor" class="text-white fs-5" target="_blank" href="./blog.html">Blog</a>
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Category Button Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <button onclick="loadData('All',this)" id="btn-all" class="allButton btn fs-5 my-2 mx-2">
+                        All
+                    </button>
+
+                    <button onclick="loadData('Music',this)" id="btn-music" class="allButton btn fs-5 my-2 mx-2">
+                        Music
+                    </button>
+
+                    <button onclick="loadData('Comedy',this)" id="btn-comedy" class="allButton btn fs-5 my-2 mx-2">
+                        Comedy
+                    </button>
+
+                    <button onclick="loadData('Drawing',this)" id="btn-drawing" class="allButton btn fs-5 my-2 mx-2">
+                        Drawing
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+    
+    <!-- Category Button Section Ends -->
+
+
+    <!-- Content Showing Area -->
+    <div class="container my-5">
+        <div id="parent-container" class="special row row-cols-1 row-cols-md-4 g-4">
+
+        </div>
+
+    </div>
+
+
+    <!-- No content showing area -->
+    <div id="no-content-container">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
